@@ -1,0 +1,97 @@
+
+<!--
+XSL преобразования
+Использование XSL преобразований для выборки и отображения данных из XML файла.
+-->
+
+<?xml-stylesheet type = "text/xsl" href = "service.xsl"?>
+
+<service>
+	<orders>
+		<order>
+			<client>Vasya</client>
+			<model>samsung</model>
+			<breaking>screen</breaking>
+			<telephone>8-777-123-45-67</telephone>
+			<price>1000</price>
+			<worker>John</worker>
+		</order>
+		<order>
+			<client>Petya</client>
+			<model>Xiaomi</model>
+			<breaking>camera</breaking>
+			<telephone>8-777-123-45-61</telephone>
+			<price>2000</price>
+			<worker>Jack</worker>
+		</order>
+		<order>
+			<client>Ivan</client>
+			<model>iphone</model>
+			<breaking>micro</breaking>
+			<telephone>8-777-123-45-62</telephone>
+			<price>400</price>
+			<worker>Jack</worker>
+		</order>
+		<order>
+			<client>Katya</client>
+			<model>Nokia</model>
+			<breaking>keyboard</breaking>
+			<telephone>8-777-123-45-11</telephone>
+			<price>600</price>
+			<worker>John</worker>
+		</order>
+	</orders>
+	<employees>
+		<employee>
+			<name>John</name>
+			<telephone>8-111-123-45-11</telephone>
+			<mail>john@mail.com</mail>
+			<address>USA, 3 dom</address>
+			<salary>40000</salary>
+		</employee>
+		<employee>
+			<name>Jack</name>
+			<telephone>8-111-123-44-99</telephone>
+			<mail>jack@mail.com</mail>
+			<address>USA, 9 dom</address>
+			<salary>50000</salary>
+		</employee>
+	</employees>
+
+	<clients>
+		<client>
+			<name>Vasya</name>
+			<telephone>8-777-123-45-67</telephone>
+			<mail>vasya@mail.com</mail>
+			<address>Moskow, Kremlin</address>
+			<model>samsung</model>
+		</client>
+		<client>
+			<name>Petya</name>
+			<telephone>8-777-123-45-61</telephone>
+			<mail>petya@mail.com</mail>
+			<address>Saratow, Lenina, 7</address>
+			<model>Xiaomi</model>
+		</client>
+		<client>
+			<name>Ivan</name>
+			<telephone>8-777-123-45-62</telephone>
+			<mail>ivan@mail.com</mail>
+			<address>Antananarivu, 3</address>
+			<model>iphone</model>
+		</client>
+		<client>
+			<name>Katya</name>
+			<telephone>8-777-123-45-11</telephone>
+			<mail>katya@mail.com</mail>
+			<address>Sochi, more</address>
+			<model>Nokia</model>
+		</client>
+	</clients>
+	<about>
+		<title>Service</title>
+		<description>I am honored to be with you today at your commencement from one of the finest universities in the world. I never graduated from college. Truth be told, this is the closest I've ever gotten to a college graduation. Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
+
+The first story is about connecting the dots.</description>
+	</about>
+</service>

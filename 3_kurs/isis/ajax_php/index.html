@@ -1,0 +1,62 @@
+<html> 
+<head>
+	<meta charset="utf-8">
+	<title>Calc on ajax & php</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		
+		function calculate_function() { 
+			
+			var operation = document.getElementById("setoperation").value;    
+			var a = parseInt(document.getElementById("first_variable").value);	
+			var b = parseInt(document.getElementById("second_variable").value);
+			
+				$.ajax({
+				
+					type: "POST",
+					url: "calc.php",
+					data: { first_variable: a, second_variable: b, operation: operation },
+					success: function(res){
+						document.getElementById("result").innerHTML = res;
+					}
+				
+				});
+		}
+	</script>
+
+
+</head>
+<body>
+
+
+ 	<div>
+		<p>a:<input id="first_variable"></p>
+		<p>b:<input id="second_variable"</p>
+	</div>
+	
+	<div>	
+		<select id="setoperation">
+    		<option value="plus">a + b</option>
+    		<option value="minus">a - b</option>
+    		<option value="multi">a * b</option>
+    		<option value="div">a / b</option>
+    		<option value="pow">a ^ b</option>
+    		<option value="sqrt">a ^ 1/b</option>
+    		<option value="sin">sin(a)</option>
+    		<option value="cos">cos(a)</option>
+    		<option value="tg">tg(a)</option>
+    		<option value="ctg">ctg(a)</option>
+    		
+		</select>
+	</div>
+	
+	<div>
+			<button onclick="calculate_function()">calculate</button>
+
+		<p>result:</p> 
+		<label id="result"></label>
+
+	</div>
+</body>
+
+</html>
